@@ -1,5 +1,6 @@
 import os
 
-def ran():
-	print "[*] In environment module."
-	return str(os.environ)
+class environment(object):
+	def ran(self):
+		print "[*] In environment module."
+		return str(os.environ)

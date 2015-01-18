@@ -1,7 +1,8 @@
 import os
 
-def ran():
-	print "[*] In dirlister module"
-	files=os.listdir(".")
+class dirlister(object):
+	def ran(self):
+		print "[*] In dirlister module"
+		files=os.listdir(".")
 
-	return str(files)
+		return str(files)

