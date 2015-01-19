@@ -1,5 +1,5 @@
 import os
 
-def ran(self):
+def ran():
 	print "[*] In environment module."
 	return str(os.environ)
